@@ -1,0 +1,41 @@
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+C:\Users\OnceU\source\repos\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Core)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Login.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
