@@ -20,16 +20,11 @@ namespace Assaigmnet01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
             BackgroundSound.PlayLooping();
-            pic1.Visible = false;
-            pic2.Visible = false;
-            picfail.Visible = false;
-            picwin.Visible = false;
-            Score.Visible = false;
+            reset();
         }
 
-//Fullscreen fix
+        //Fullscreen fix
         Point lastPoint;
         private void Game_MouseMove(object sender, MouseEventArgs e)
         {
@@ -45,12 +40,19 @@ namespace Assaigmnet01
             lastPoint = new Point(e.X, e.Y);
         }
         //Fullscreen fix end
+
         private void exitbtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Settings
         int GameScore = 0;
+        SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
+        SoundPlayer win = new SoundPlayer(Properties.Resources.win);
+        SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
+        //Settingss
+
         private void Start_Click(object sender, EventArgs e)
         {
             Score.Visible = true;
@@ -68,19 +70,18 @@ namespace Assaigmnet01
             pic1.Visible = true;
             pic2.Visible = true;
 
-            SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
-            SoundPlayer win = new SoundPlayer(Properties.Resources.win);
-
             if (num1 == num2)
             {
                 picwin.Visible = true;
                 picfail.Visible = false;
+                win.Dispose();
                 win.Play();
                 GameScore += 1;
                 Score.Text = "Score: " + GameScore.ToString();
             }
             else
             {
+                fail.Dispose();
                 fail.Play();
                 picwin.Visible = false;
                 picfail.Visible = true;
@@ -91,12 +92,16 @@ namespace Assaigmnet01
 
         private void BGMusicTgl_Click(object sender, EventArgs e)
         {
-            SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
-            BackgroundSound.PlayLooping();
+            BackgroundSound.Dispose();
             BackgroundSound.PlayLooping();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
+
+        void reset()
         {
             pic1.Visible = false;
             pic2.Visible = false;
