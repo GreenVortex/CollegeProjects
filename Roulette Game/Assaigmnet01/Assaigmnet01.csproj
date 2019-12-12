@@ -52,19 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,9 +87,6 @@
     <None Include="Resources\41725_minecraft-background-pictures.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wooden_Pickaxe.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\minecraft-diamond-pickaxe-template-2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +100,27 @@
     <None Include="Resources\Background.mp3" />
     <None Include="Resources\fail.wav" />
     <None Include="Resources\win.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tntd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

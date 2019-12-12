@@ -20,12 +20,13 @@ namespace Assaigmnet01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SoundPlayer Background = new SoundPlayer(Properties.Resources.Background);
-            Background.PlayLooping();
+            SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
+            BackgroundSound.PlayLooping();
             pic1.Visible = false;
             pic2.Visible = false;
             picfail.Visible = false;
             picwin.Visible = false;
+            Score.Visible = false;
         }
 
 //Fullscreen fix
@@ -49,8 +50,10 @@ namespace Assaigmnet01
             Application.Exit();
         }
 
+        int GameScore = 0;
         private void Start_Click(object sender, EventArgs e)
         {
+            Score.Visible = true;
             picwin.Visible = false;
             picfail.Visible = false;
 
@@ -70,22 +73,37 @@ namespace Assaigmnet01
 
             if (num1 == num2)
             {
-
                 picwin.Visible = true;
                 picfail.Visible = false;
                 win.Play();
+                GameScore += 1;
+                Score.Text = "Score: " + GameScore.ToString();
             }
             else
             {
                 fail.Play();
                 picwin.Visible = false;
                 picfail.Visible = true;
+                GameScore = 0;
+                Score.Text = "Score: " + GameScore.ToString();
             }
         }
 
-        private void pic1_Click(object sender, EventArgs e)
+        private void BGMusicTgl_Click(object sender, EventArgs e)
         {
+            SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
+            BackgroundSound.PlayLooping();
+            BackgroundSound.PlayLooping();
+        }
 
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            pic1.Visible = false;
+            pic2.Visible = false;
+            picfail.Visible = false;
+            picwin.Visible = false;
+            Score.Visible = false;
+            GameScore = 0;
         }
     }
 }

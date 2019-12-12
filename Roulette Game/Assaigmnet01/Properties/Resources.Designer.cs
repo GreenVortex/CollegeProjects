@@ -92,6 +92,26 @@ namespace Assaigmnet01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bad {
+            get {
+                object obj = ResourceManager.GetObject("bad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bad1 {
+            get {
+                object obj = ResourceManager.GetObject("bad1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bd75a2d583e6845fa9ed43bc0a15a4dc {
             get {
                 object obj = ResourceManager.GetObject("bd75a2d583e6845fa9ed43bc0a15a4dc", resourceCulture);
@@ -121,9 +141,49 @@ namespace Assaigmnet01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap good {
+            get {
+                object obj = ResourceManager.GetObject("good", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap good1 {
+            get {
+                object obj = ResourceManager.GetObject("good1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap juke {
+            get {
+                object obj = ResourceManager.GetObject("juke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minecraft_diamond_pickaxe_template_2 {
             get {
                 object obj = ResourceManager.GetObject("minecraft-diamond-pickaxe-template-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TNT {
+            get {
+                object obj = ResourceManager.GetObject("TNT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -134,16 +194,6 @@ namespace Assaigmnet01.Properties {
         internal static System.IO.UnmanagedMemoryStream win {
             get {
                 return ResourceManager.GetStream("win", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Wooden_Pickaxe {
-            get {
-                object obj = ResourceManager.GetObject("Wooden_Pickaxe", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
