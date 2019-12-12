@@ -62,8 +62,6 @@
             // 
             // picwin
             // 
-            this.picwin.BackgroundImage = global::Assaigmnet01.Properties.Resources.download;
-            this.picwin.Image = global::Assaigmnet01.Properties.Resources.good1;
             this.picwin.Location = new System.Drawing.Point(267, 184);
             this.picwin.Name = "picwin";
             this.picwin.Size = new System.Drawing.Size(150, 150);
@@ -103,8 +101,6 @@
             // 
             // picfail
             // 
-            this.picfail.BackgroundImage = global::Assaigmnet01.Properties.Resources.download;
-            this.picfail.Image = global::Assaigmnet01.Properties.Resources.bad1;
             this.picfail.Location = new System.Drawing.Point(267, 184);
             this.picfail.Name = "picfail";
             this.picfail.Size = new System.Drawing.Size(150, 150);
@@ -115,7 +111,6 @@
             // BGMusicTgl
             // 
             this.BGMusicTgl.BackColor = System.Drawing.Color.Transparent;
-            this.BGMusicTgl.Image = global::Assaigmnet01.Properties.Resources.juke;
             this.BGMusicTgl.Location = new System.Drawing.Point(12, 288);
             this.BGMusicTgl.Name = "BGMusicTgl";
             this.BGMusicTgl.Size = new System.Drawing.Size(60, 60);
@@ -127,7 +122,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Assaigmnet01.Properties.Resources.TNT;
             this.pictureBox1.Location = new System.Drawing.Point(78, 288);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
@@ -140,8 +134,7 @@
             // 
             this.Score.BackColor = System.Drawing.Color.Transparent;
             this.Score.Font = new System.Drawing.Font("Minecraft", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Score.Image = global::Assaigmnet01.Properties.Resources.bd75a2d583e6845fa9ed43bc0a15a4dc;
+            this.Score.ForeColor = System.Drawing.SystemColors.Control;
             this.Score.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Score.Location = new System.Drawing.Point(-2, -8);
             this.Score.Name = "Score";

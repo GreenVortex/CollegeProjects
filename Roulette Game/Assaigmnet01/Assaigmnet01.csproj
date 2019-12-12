@@ -97,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Background.wav" />
-    <None Include="Resources\Background.mp3" />
     <None Include="Resources\fail.wav" />
     <None Include="Resources\win.wav" />
   </ItemGroup>
@@ -106,15 +105,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\juke.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TNT.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bad.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\good.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\good1.gif" />
