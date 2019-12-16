@@ -21,7 +21,7 @@ namespace Assaigmnet01
         private void Form1_Load(object sender, EventArgs e)
         {
             BackgroundSound.PlayLooping();
-            reset();
+            Reset();
         }
 
         //Fullscreen fix
@@ -74,15 +74,15 @@ namespace Assaigmnet01
             {
                 picwin.Visible = true;
                 picfail.Visible = false;
-                win.Dispose();
                 win.Play();
+                win.Dispose();
                 GameScore += 1;
                 Score.Text = "Score: " + GameScore.ToString();
             }
             else
             {
-                fail.Dispose();
                 fail.Play();
+                fail.Dispose();
                 picwin.Visible = false;
                 picfail.Visible = true;
                 GameScore = 0;
@@ -98,10 +98,10 @@ namespace Assaigmnet01
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            reset();
+            Reset();
         }
 
-        void reset()
+        void Reset()
         {
             pic1.Visible = false;
             pic2.Visible = false;
