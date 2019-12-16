@@ -51,11 +51,12 @@ namespace Assaigmnet01
                     Game myForm = new Game();
                     this.Hide();
                     myForm.ShowDialog();
+                    myForm.Dispose();
                     this.Close();
                 }
                 else
                 {
-                    Counter = Counter - 1;
+                    Counter -= 1;
                     MessageBox.Show("Login error you have " + Counter.ToString() + " Attempts left", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
                 }
             }
