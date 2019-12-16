@@ -48,9 +48,9 @@ namespace Assaigmnet01
 
         //Settings
         int GameScore = 0;
-        SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
-        SoundPlayer win = new SoundPlayer(Properties.Resources.win);
-        SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
+        readonly SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
+        readonly SoundPlayer win = new SoundPlayer(Properties.Resources.win);
+        readonly SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
         //Settingss
 
         private void Start_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Assaigmnet01
             picfail.Visible = false;
 
             Random random = new Random();
-            int num1 = 0, num2 = 0;
+            int num1, num2;
 
             num1 = random.Next(1, 3);
             num2 = random.Next(1, 3);
