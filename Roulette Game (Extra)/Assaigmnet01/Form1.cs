@@ -53,40 +53,60 @@ namespace Assaigmnet01
         readonly SoundPlayer BackgroundSound = new SoundPlayer(Properties.Resources.Background);
         //Settingss
 
+
         private void Start_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
+            int num1, num2;
+            pic1.Visible = true;
+            pic2.Visible = true;
             Score.Visible = true;
             picwin.Visible = false;
             picfail.Visible = false;
-
-            Random random = new Random();
-            int num1, num2;
-
-            num1 = random.Next(1, 3);
-            num2 = random.Next(1, 3);
-
-            pic1.Image = Image.FromFile(@num1 + ".jpg");
-            pic2.Image = Image.FromFile(@num2 + ".jpg");
-            pic1.Visible = true;
-            pic2.Visible = true;
-
-            if (num1 == num2)
             {
-                picwin.Visible = true;
-                picfail.Visible = false;
-                win.Play();
-                win.Dispose();
-                GameScore += 1;
-                Score.Text = "Score: " + GameScore.ToString();
-            }
-            else
-            {
-                fail.Play();
-                fail.Dispose();
-                picwin.Visible = false;
-                picfail.Visible = true;
-                GameScore = 0;
-                Score.Text = "Score: " + GameScore.ToString();
+                num1 = random.Next(1, 3);
+                num2 = random.Next(1, 3);
+
+                pic1.Image = Image.FromFile(@num1 + ".jpg");
+                pic2.Image = Image.FromFile(@num2 + ".jpg");
+
+                Results(num1, num2);
+                DisplayResults(Results(num1, num2));
+                Boolean Results(int n1, int n2)
+                {
+                    Boolean Result = false;
+                    if (num1 == num2)
+                    {
+                        Result = true;
+                    }
+                    else
+                    {
+                        Result = false;
+                    }
+                    return Result;
+                }
+                void DisplayResults(Boolean Result)
+                {
+                    Results(num1, num2);
+                    if (Result == true)
+                    {
+                        picwin.Visible = true;
+                        picfail.Visible = false;
+                        win.Play();
+                        win.Dispose();
+                        GameScore += 1;
+                        Score.Text = "Score: " + GameScore.ToString();
+                    }
+                    else
+                    {
+                        fail.Play();
+                        fail.Dispose();
+                        picwin.Visible = false;
+                        picfail.Visible = true;
+                        GameScore = 0;
+                        Score.Text = "Score: " + GameScore.ToString();
+                    }
+                }
             }
         }
 
