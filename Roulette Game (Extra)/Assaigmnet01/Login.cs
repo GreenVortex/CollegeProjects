@@ -39,7 +39,7 @@ namespace Assaigmnet01
             if (Counter == 1)
             {
                 MessageBox.Show("Attempts Exceeded program will now close","Login Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                Thread.Sleep(3000);
+                Thread.Sleep(1000);
                 Application.Exit();
             }
             else
