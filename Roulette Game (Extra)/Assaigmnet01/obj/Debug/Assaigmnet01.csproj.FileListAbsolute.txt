@@ -39,3 +39,13 @@ C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet
 C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
 C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
 C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Login.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb

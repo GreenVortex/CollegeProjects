@@ -49,7 +49,6 @@ namespace Assaigmnet01
                 if (Password.Equals("admin") && Username.Equals("admin"))
                 {
                     Game myForm = new Game();
-                    this.Hide();
                     myForm.ShowDialog();
                     myForm.Dispose();
                     this.Close();
