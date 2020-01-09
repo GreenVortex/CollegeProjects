@@ -1,0 +1,9 @@
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.exe.config
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.Form1.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.Properties.Resources.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.csproj.GenerateResource.cache
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Student Details.mdb
