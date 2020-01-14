@@ -89,7 +89,6 @@ namespace Database_Project
                 int c = Convert.ToInt32(studentsDataGridView.Rows[i].Cells[5].Value);
                 int r = (s + c) / 2;
                 studentsDataGridView.Rows[i].Cells[6].Value = r.ToString();
-
             }
 
         }
