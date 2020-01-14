@@ -75,5 +75,23 @@ namespace Database_Project
             }
 
         }
+
+        private void summer_FailToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Results_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < studentsDataGridView.Rows.Count - 1; i++)
+            {
+                int s = Convert.ToInt32(studentsDataGridView.Rows[i].Cells[4].Value);
+                int c = Convert.ToInt32(studentsDataGridView.Rows[i].Cells[5].Value);
+                int r = (s + c) / 2;
+                studentsDataGridView.Rows[i].Cells[6].Value = r.ToString();
+
+            }
+
+        }
     }
 }

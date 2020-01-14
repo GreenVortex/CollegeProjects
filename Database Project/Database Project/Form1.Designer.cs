@@ -74,6 +74,7 @@
             this.dundalk_or_DroghedaToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.summer_FailToolStrip = new System.Windows.Forms.ToolStrip();
             this.summer_FailToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.Results = new System.Windows.Forms.Button();
             nameLabel = new System.Windows.Forms.Label();
             phoneNumberLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -94,7 +95,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(676, 134);
+            nameLabel.Location = new System.Drawing.Point(9, 188);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(36, 13);
             nameLabel.TabIndex = 2;
@@ -103,7 +104,7 @@
             // phoneNumberLabel
             // 
             phoneNumberLabel.AutoSize = true;
-            phoneNumberLabel.Location = new System.Drawing.Point(676, 160);
+            phoneNumberLabel.Location = new System.Drawing.Point(9, 214);
             phoneNumberLabel.Name = "phoneNumberLabel";
             phoneNumberLabel.Size = new System.Drawing.Size(80, 13);
             phoneNumberLabel.TabIndex = 4;
@@ -112,7 +113,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(676, 186);
+            addressLabel.Location = new System.Drawing.Point(9, 240);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new System.Drawing.Size(48, 13);
             addressLabel.TabIndex = 6;
@@ -121,7 +122,7 @@
             // class_GroupLabel
             // 
             class_GroupLabel.AutoSize = true;
-            class_GroupLabel.Location = new System.Drawing.Point(676, 212);
+            class_GroupLabel.Location = new System.Drawing.Point(9, 266);
             class_GroupLabel.Name = "class_GroupLabel";
             class_GroupLabel.Size = new System.Drawing.Size(67, 13);
             class_GroupLabel.TabIndex = 8;
@@ -130,7 +131,7 @@
             // summer_MarkLabel
             // 
             summer_MarkLabel.AutoSize = true;
-            summer_MarkLabel.Location = new System.Drawing.Point(676, 238);
+            summer_MarkLabel.Location = new System.Drawing.Point(9, 292);
             summer_MarkLabel.Name = "summer_MarkLabel";
             summer_MarkLabel.Size = new System.Drawing.Size(75, 13);
             summer_MarkLabel.TabIndex = 10;
@@ -139,7 +140,7 @@
             // christmas_MarkLabel
             // 
             christmas_MarkLabel.AutoSize = true;
-            christmas_MarkLabel.Location = new System.Drawing.Point(676, 264);
+            christmas_MarkLabel.Location = new System.Drawing.Point(9, 318);
             christmas_MarkLabel.Name = "christmas_MarkLabel";
             christmas_MarkLabel.Size = new System.Drawing.Size(82, 13);
             christmas_MarkLabel.TabIndex = 12;
@@ -191,7 +192,7 @@
             this.studentsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.studentsBindingNavigator.Name = "studentsBindingNavigator";
             this.studentsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.studentsBindingNavigator.Size = new System.Drawing.Size(876, 25);
+            this.studentsBindingNavigator.Size = new System.Drawing.Size(669, 25);
             this.studentsBindingNavigator.TabIndex = 0;
             this.studentsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -247,6 +248,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -301,7 +303,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.studentsDataGridView.DataSource = this.studentsBindingSource;
-            this.studentsDataGridView.Location = new System.Drawing.Point(12, 131);
+            this.studentsDataGridView.Location = new System.Drawing.Point(9, 28);
             this.studentsDataGridView.Name = "studentsDataGridView";
             this.studentsDataGridView.Size = new System.Drawing.Size(648, 150);
             this.studentsDataGridView.TabIndex = 1;
@@ -345,7 +347,7 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(764, 131);
+            this.nameTextBox.Location = new System.Drawing.Point(97, 185);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 3;
@@ -353,7 +355,7 @@
             // phoneNumberTextBox
             // 
             this.phoneNumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "phoneNumber", true));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(764, 157);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(97, 211);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.phoneNumberTextBox.TabIndex = 5;
@@ -361,7 +363,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(764, 183);
+            this.addressTextBox.Location = new System.Drawing.Point(97, 237);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(100, 20);
             this.addressTextBox.TabIndex = 7;
@@ -369,7 +371,7 @@
             // class_GroupTextBox
             // 
             this.class_GroupTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "Class Group", true));
-            this.class_GroupTextBox.Location = new System.Drawing.Point(764, 209);
+            this.class_GroupTextBox.Location = new System.Drawing.Point(97, 263);
             this.class_GroupTextBox.Name = "class_GroupTextBox";
             this.class_GroupTextBox.Size = new System.Drawing.Size(100, 20);
             this.class_GroupTextBox.TabIndex = 9;
@@ -377,7 +379,7 @@
             // summer_MarkTextBox
             // 
             this.summer_MarkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "Summer Mark", true));
-            this.summer_MarkTextBox.Location = new System.Drawing.Point(764, 235);
+            this.summer_MarkTextBox.Location = new System.Drawing.Point(97, 289);
             this.summer_MarkTextBox.Name = "summer_MarkTextBox";
             this.summer_MarkTextBox.Size = new System.Drawing.Size(100, 20);
             this.summer_MarkTextBox.TabIndex = 11;
@@ -385,23 +387,27 @@
             // christmas_MarkTextBox
             // 
             this.christmas_MarkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentsBindingSource, "Christmas Mark", true));
-            this.christmas_MarkTextBox.Location = new System.Drawing.Point(764, 261);
+            this.christmas_MarkTextBox.Location = new System.Drawing.Point(97, 315);
             this.christmas_MarkTextBox.Name = "christmas_MarkTextBox";
             this.christmas_MarkTextBox.Size = new System.Drawing.Size(100, 20);
             this.christmas_MarkTextBox.TabIndex = 13;
             // 
             // dundalkToolStrip
             // 
+            this.dundalkToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dundalkToolStrip.AutoSize = false;
+            this.dundalkToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.dundalkToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dundalkToolStripButton});
-            this.dundalkToolStrip.Location = new System.Drawing.Point(0, 25);
+            this.dundalkToolStrip.Location = new System.Drawing.Point(204, -41);
             this.dundalkToolStrip.Name = "dundalkToolStrip";
-            this.dundalkToolStrip.Size = new System.Drawing.Size(876, 25);
+            this.dundalkToolStrip.Size = new System.Drawing.Size(82, 25);
             this.dundalkToolStrip.TabIndex = 14;
             this.dundalkToolStrip.Text = "dundalkToolStrip";
             // 
             // dundalkToolStripButton
             // 
+            this.dundalkToolStripButton.AutoSize = false;
             this.dundalkToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.dundalkToolStripButton.Name = "dundalkToolStripButton";
             this.dundalkToolStripButton.Size = new System.Drawing.Size(55, 22);
@@ -410,11 +416,13 @@
             // 
             // summer_Pass_GradeToolStrip
             // 
+            this.summer_Pass_GradeToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.summer_Pass_GradeToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.summer_Pass_GradeToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.summer_Pass_GradeToolStripButton});
-            this.summer_Pass_GradeToolStrip.Location = new System.Drawing.Point(0, 50);
+            this.summer_Pass_GradeToolStrip.Location = new System.Drawing.Point(426, -41);
             this.summer_Pass_GradeToolStrip.Name = "summer_Pass_GradeToolStrip";
-            this.summer_Pass_GradeToolStrip.Size = new System.Drawing.Size(876, 25);
+            this.summer_Pass_GradeToolStrip.Size = new System.Drawing.Size(132, 25);
             this.summer_Pass_GradeToolStrip.TabIndex = 15;
             this.summer_Pass_GradeToolStrip.Text = "summer_Pass_GradeToolStrip";
             // 
@@ -428,11 +436,13 @@
             // 
             // dundalk_or_DroghedaToolStrip
             // 
+            this.dundalk_or_DroghedaToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dundalk_or_DroghedaToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.dundalk_or_DroghedaToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dundalk_or_DroghedaToolStripButton});
-            this.dundalk_or_DroghedaToolStrip.Location = new System.Drawing.Point(0, 75);
+            this.dundalk_or_DroghedaToolStrip.Location = new System.Drawing.Point(286, -41);
             this.dundalk_or_DroghedaToolStrip.Name = "dundalk_or_DroghedaToolStrip";
-            this.dundalk_or_DroghedaToolStrip.Size = new System.Drawing.Size(876, 25);
+            this.dundalk_or_DroghedaToolStrip.Size = new System.Drawing.Size(140, 25);
             this.dundalk_or_DroghedaToolStrip.TabIndex = 16;
             this.dundalk_or_DroghedaToolStrip.Text = "dundalk_or_DroghedaToolStrip";
             // 
@@ -446,13 +456,16 @@
             // 
             // summer_FailToolStrip
             // 
+            this.summer_FailToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.summer_FailToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.summer_FailToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.summer_FailToolStripButton});
-            this.summer_FailToolStrip.Location = new System.Drawing.Point(0, 100);
+            this.summer_FailToolStrip.Location = new System.Drawing.Point(558, -41);
             this.summer_FailToolStrip.Name = "summer_FailToolStrip";
-            this.summer_FailToolStrip.Size = new System.Drawing.Size(876, 25);
+            this.summer_FailToolStrip.Size = new System.Drawing.Size(91, 25);
             this.summer_FailToolStrip.TabIndex = 17;
             this.summer_FailToolStrip.Text = "summer_FailToolStrip";
+            this.summer_FailToolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.summer_FailToolStrip_ItemClicked);
             // 
             // summer_FailToolStripButton
             // 
@@ -462,11 +475,22 @@
             this.summer_FailToolStripButton.Text = "Summer_Fail";
             this.summer_FailToolStripButton.Click += new System.EventHandler(this.summer_FailToolStripButton_Click);
             // 
+            // Results
+            // 
+            this.Results.Location = new System.Drawing.Point(301, 214);
+            this.Results.Name = "Results";
+            this.Results.Size = new System.Drawing.Size(75, 23);
+            this.Results.TabIndex = 18;
+            this.Results.Text = "Results";
+            this.Results.UseVisualStyleBackColor = true;
+            this.Results.Click += new System.EventHandler(this.Results_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 293);
+            this.ClientSize = new System.Drawing.Size(669, 339);
+            this.Controls.Add(this.Results);
             this.Controls.Add(this.summer_FailToolStrip);
             this.Controls.Add(this.dundalk_or_DroghedaToolStrip);
             this.Controls.Add(this.summer_Pass_GradeToolStrip);
@@ -547,6 +571,7 @@
         private System.Windows.Forms.ToolStripButton dundalk_or_DroghedaToolStripButton;
         private System.Windows.Forms.ToolStrip summer_FailToolStrip;
         private System.Windows.Forms.ToolStripButton summer_FailToolStripButton;
+        private System.Windows.Forms.Button Results;
     }
 }
 

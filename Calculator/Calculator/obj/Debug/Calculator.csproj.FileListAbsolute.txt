@@ -8,3 +8,12 @@ C:\Users\OnceU\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.Ge
 C:\Users\OnceU\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\OnceU\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\OnceU\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\bin\Debug\Calculator.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\bin\Debug\Calculator.pdb
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.exe
+\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Calculator\Calculator\obj\Debug\Calculator.pdb
