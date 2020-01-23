@@ -75,6 +75,7 @@
             this.summer_FailToolStrip = new System.Windows.Forms.ToolStrip();
             this.summer_FailToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.Results = new System.Windows.Forms.Button();
+            this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             nameLabel = new System.Windows.Forms.Label();
             phoneNumberLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -192,7 +193,7 @@
             this.studentsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.studentsBindingNavigator.Name = "studentsBindingNavigator";
             this.studentsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.studentsBindingNavigator.Size = new System.Drawing.Size(669, 25);
+            this.studentsBindingNavigator.Size = new System.Drawing.Size(758, 25);
             this.studentsBindingNavigator.TabIndex = 0;
             this.studentsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -248,7 +249,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -301,11 +301,12 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.dataGridViewTextBoxColumn6,
+            this.Result});
             this.studentsDataGridView.DataSource = this.studentsBindingSource;
             this.studentsDataGridView.Location = new System.Drawing.Point(9, 28);
             this.studentsDataGridView.Name = "studentsDataGridView";
-            this.studentsDataGridView.Size = new System.Drawing.Size(648, 150);
+            this.studentsDataGridView.Size = new System.Drawing.Size(743, 150);
             this.studentsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -399,7 +400,7 @@
             this.dundalkToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.dundalkToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dundalkToolStripButton});
-            this.dundalkToolStrip.Location = new System.Drawing.Point(204, -41);
+            this.dundalkToolStrip.Location = new System.Drawing.Point(249, -41);
             this.dundalkToolStrip.Name = "dundalkToolStrip";
             this.dundalkToolStrip.Size = new System.Drawing.Size(82, 25);
             this.dundalkToolStrip.TabIndex = 14;
@@ -420,7 +421,7 @@
             this.summer_Pass_GradeToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.summer_Pass_GradeToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.summer_Pass_GradeToolStripButton});
-            this.summer_Pass_GradeToolStrip.Location = new System.Drawing.Point(426, -41);
+            this.summer_Pass_GradeToolStrip.Location = new System.Drawing.Point(471, -41);
             this.summer_Pass_GradeToolStrip.Name = "summer_Pass_GradeToolStrip";
             this.summer_Pass_GradeToolStrip.Size = new System.Drawing.Size(132, 25);
             this.summer_Pass_GradeToolStrip.TabIndex = 15;
@@ -440,7 +441,7 @@
             this.dundalk_or_DroghedaToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.dundalk_or_DroghedaToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dundalk_or_DroghedaToolStripButton});
-            this.dundalk_or_DroghedaToolStrip.Location = new System.Drawing.Point(286, -41);
+            this.dundalk_or_DroghedaToolStrip.Location = new System.Drawing.Point(331, -41);
             this.dundalk_or_DroghedaToolStrip.Name = "dundalk_or_DroghedaToolStrip";
             this.dundalk_or_DroghedaToolStrip.Size = new System.Drawing.Size(140, 25);
             this.dundalk_or_DroghedaToolStrip.TabIndex = 16;
@@ -460,7 +461,7 @@
             this.summer_FailToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.summer_FailToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.summer_FailToolStripButton});
-            this.summer_FailToolStrip.Location = new System.Drawing.Point(558, -41);
+            this.summer_FailToolStrip.Location = new System.Drawing.Point(603, -41);
             this.summer_FailToolStrip.Name = "summer_FailToolStrip";
             this.summer_FailToolStrip.Size = new System.Drawing.Size(91, 25);
             this.summer_FailToolStrip.TabIndex = 17;
@@ -485,11 +486,16 @@
             this.Results.UseVisualStyleBackColor = true;
             this.Results.Click += new System.EventHandler(this.Results_Click);
             // 
+            // Result
+            // 
+            this.Result.HeaderText = "Result";
+            this.Result.Name = "Result";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 339);
+            this.ClientSize = new System.Drawing.Size(758, 339);
             this.Controls.Add(this.Results);
             this.Controls.Add(this.summer_FailToolStrip);
             this.Controls.Add(this.dundalk_or_DroghedaToolStrip);
@@ -572,6 +578,7 @@
         private System.Windows.Forms.ToolStrip summer_FailToolStrip;
         private System.Windows.Forms.ToolStripButton summer_FailToolStripButton;
         private System.Windows.Forms.Button Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Result;
     }
 }
 
