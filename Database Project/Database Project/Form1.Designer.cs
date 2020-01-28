@@ -77,6 +77,8 @@
             this.summer_FailToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.Results = new System.Windows.Forms.Button();
             this.Search = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             nameLabel = new System.Windows.Forms.Label();
             phoneNumberLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -501,12 +503,26 @@
             this.Search.TabIndex = 19;
             this.Search.Text = "Search";
             this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(337, 218);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 339);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.Results);
             this.Controls.Add(this.summer_FailToolStrip);
@@ -592,6 +608,8 @@
         private System.Windows.Forms.Button Results;
         private System.Windows.Forms.DataGridViewTextBoxColumn Result;
         private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

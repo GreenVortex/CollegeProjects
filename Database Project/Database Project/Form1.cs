@@ -93,5 +93,48 @@ namespace Database_Project
             }
 
         }
+
+        private void Search_Click(object sender, EventArgs e)
+        {
+                        this.studentsTableAdapter.Update(this.student_DetailsDataSet);
+
+            OleDbConnection conn = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\Student Details.mdb");
+            //set up connection string
+            conn.Open();
+
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Students WHERE name LIKE '" + Search.Text + "%'",conn);
+
+
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            DataSet ds = new DataSet();
+          
+            da.Fill(ds);
+           
+            this.studentsDataGridView.DataSource = ds.Tables[0];
+            OleDbDataReader dbDataReader = cmd.ExecuteReader();
+
+
+            if (dbDataReader.Read())
+            {
+                nameTextBox.Text = dbDataReader["name"].ToString();
+                phoneNumberTextBox.Text = dbDataReader["phoneNumber"].ToString();
+
+
+              addressTextBox.Text = dbDataReader["Address"].ToString();
+                class_GroupTextBox.Text = dbDataReader["Class Group"].ToString();
+                summer_MarkTextBox.Text = dbDataReader["Summer Mark"].ToString();
+
+                christmas_MarkTextBox.Text = dbDataReader["Christmas Mark"].ToString();
+
+            }
+            else
+            {
+                MessageBox.Show("Record not found","Not Found");
+            }
+
+
+            conn.Close();
+
+        }
     }
 }
