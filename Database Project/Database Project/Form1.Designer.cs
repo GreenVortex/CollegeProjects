@@ -60,6 +60,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
@@ -75,7 +76,7 @@
             this.summer_FailToolStrip = new System.Windows.Forms.ToolStrip();
             this.summer_FailToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.Results = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Search = new System.Windows.Forms.Button();
             nameLabel = new System.Windows.Forms.Label();
             phoneNumberLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -249,6 +250,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -344,6 +346,11 @@
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Christmas Mark";
             this.dataGridViewTextBoxColumn6.HeaderText = "Christmas Mark";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // Result
+            // 
+            this.Result.HeaderText = "Result";
+            this.Result.Name = "Result";
             // 
             // nameTextBox
             // 
@@ -478,7 +485,7 @@
             // 
             // Results
             // 
-            this.Results.Location = new System.Drawing.Point(301, 214);
+            this.Results.Location = new System.Drawing.Point(256, 185);
             this.Results.Name = "Results";
             this.Results.Size = new System.Drawing.Size(75, 23);
             this.Results.TabIndex = 18;
@@ -486,16 +493,21 @@
             this.Results.UseVisualStyleBackColor = true;
             this.Results.Click += new System.EventHandler(this.Results_Click);
             // 
-            // Result
+            // Search
             // 
-            this.Result.HeaderText = "Result";
-            this.Result.Name = "Result";
+            this.Search.Location = new System.Drawing.Point(256, 215);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(75, 23);
+            this.Search.TabIndex = 19;
+            this.Search.Text = "Search";
+            this.Search.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 339);
+            this.Controls.Add(this.Search);
             this.Controls.Add(this.Results);
             this.Controls.Add(this.summer_FailToolStrip);
             this.Controls.Add(this.dundalk_or_DroghedaToolStrip);
@@ -579,6 +591,7 @@
         private System.Windows.Forms.ToolStripButton summer_FailToolStripButton;
         private System.Windows.Forms.Button Results;
         private System.Windows.Forms.DataGridViewTextBoxColumn Result;
+        private System.Windows.Forms.Button Search;
     }
 }
 
