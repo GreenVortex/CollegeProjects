@@ -91,7 +91,6 @@ namespace Database_Project
                 int r = (s + c) / 2;
                 studentsDataGridView.Rows[i].Cells[6].Value = r.ToString();
             }
-
         }
 
         private void Search_Click(object sender, EventArgs e)
@@ -102,7 +101,7 @@ namespace Database_Project
             //set up connection string
             conn.Open();
 
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Students WHERE name LIKE '" + Search.Text + "%'",conn);
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Students WHERE name LIKE '" + SearchWord.Text + "%'",conn);
 
 
             OleDbDataAdapter da = new OleDbDataAdapter(cmd);
@@ -113,7 +112,7 @@ namespace Database_Project
             this.studentsDataGridView.DataSource = ds.Tables[0];
             OleDbDataReader dbDataReader = cmd.ExecuteReader();
 
-
+            
             if (dbDataReader.Read())
             {
                 nameTextBox.Text = dbDataReader["name"].ToString();
