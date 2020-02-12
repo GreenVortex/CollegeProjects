@@ -49,3 +49,13 @@ C:\Users\OnceU\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe.config
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.exe
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\bin\Debug\Assaigmnet01.pdb
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csprojAssemblyReference.cache
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Game.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Login.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.Properties.Resources.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
