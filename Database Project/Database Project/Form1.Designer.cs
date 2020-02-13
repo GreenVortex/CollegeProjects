@@ -79,6 +79,8 @@
             this.Search = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SearchWord = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.helpFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             nameLabel = new System.Windows.Forms.Label();
             phoneNumberLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -94,6 +96,7 @@
             this.summer_Pass_GradeToolStrip.SuspendLayout();
             this.dundalk_or_DroghedaToolStrip.SuspendLayout();
             this.summer_FailToolStrip.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -189,7 +192,7 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.studentsBindingNavigatorSaveItem});
-            this.studentsBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.studentsBindingNavigator.Location = new System.Drawing.Point(0, 24);
             this.studentsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.studentsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.studentsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -517,6 +520,23 @@
             this.SearchWord.Size = new System.Drawing.Size(166, 20);
             this.SearchWord.TabIndex = 21;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpFileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(758, 24);
+            this.menuStrip1.TabIndex = 22;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // helpFileToolStripMenuItem
+            // 
+            this.helpFileToolStripMenuItem.Name = "helpFileToolStripMenuItem";
+            this.helpFileToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.helpFileToolStripMenuItem.Text = "Help File";
+            this.helpFileToolStripMenuItem.Click += new System.EventHandler(this.helpFileToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -543,6 +563,8 @@
             this.Controls.Add(this.christmas_MarkTextBox);
             this.Controls.Add(this.studentsDataGridView);
             this.Controls.Add(this.studentsBindingNavigator);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = " 4od";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -560,6 +582,8 @@
             this.dundalk_or_DroghedaToolStrip.PerformLayout();
             this.summer_FailToolStrip.ResumeLayout(false);
             this.summer_FailToolStrip.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,6 +634,8 @@
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox SearchWord;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem helpFileToolStripMenuItem;
     }
 }
 
