@@ -9,3 +9,14 @@
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Student Details.mdb
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.csprojAssemblyReference.cache
 \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.F2.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Student Details.mdb
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.exe.config
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.exe
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\bin\Debug\Database Project.pdb
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.csprojAssemblyReference.cache
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.F2.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.Form1.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database_Project.Properties.Resources.resources
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.csproj.GenerateResource.cache
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.exe
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\obj\Debug\Database Project.pdb

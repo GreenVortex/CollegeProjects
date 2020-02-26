@@ -49,8 +49,10 @@
             // 
             this.Password.Location = new System.Drawing.Point(32, 66);
             this.Password.Name = "Password";
+            this.Password.PasswordChar = '*';
             this.Password.Size = new System.Drawing.Size(157, 20);
             this.Password.TabIndex = 1;
+            this.Password.UseSystemPasswordChar = true;
             // 
             // Username
             // 
@@ -88,7 +90,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.LoginBtn);
             this.Name = "F2";
-            this.Text = "F2";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

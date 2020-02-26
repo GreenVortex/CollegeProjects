@@ -97,7 +97,7 @@ namespace Database_Project
         {
                         this.studentsTableAdapter.Update(this.student_DetailsDataSet);
 
-            OleDbConnection conn = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = \\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\Student Details.mdb");
+            OleDbConnection conn = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\Jan\Documents\GitHub\CollegeProjects\Database Project\Database Project\Student Details.mdb");
             //set up connection string
             conn.Open();
 
