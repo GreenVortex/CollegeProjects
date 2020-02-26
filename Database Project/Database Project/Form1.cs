@@ -135,5 +135,23 @@ namespace Database_Project
             conn.Close();
 
         }
+
+        private void helpFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var filePath = string.Empty;
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = @"\\NSSServer\StudentFolders$\2019\MCT\19JAndersson.OFI\GitHub\CollegeProjects\Database Project\Database Project\";
+            openFileDialog.Filter = "txt files(*.txt)|*.txt|All files(*.*|*.*)";
+            openFileDialog.Title = "Open Help";
+
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                filePath = openFileDialog.FileName;
+                openFileDialog.OpenFile();
+
+                System.Diagnostics.Process.Start(openFileDialog.FileName);
+            }
+        }
     }
 }
