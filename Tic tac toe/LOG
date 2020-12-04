@@ -1,0 +1,18 @@
+V1 Changelog
+
++ Created Board
++ Heuristic value evaluate
++ Defined win states
++ Defined game over state
++ Defined function for empty cell detection
++ Defined function to evaluate valid move
++ Redraw function for move
+
+* Defined and created the AI based on the minimax algorithm (Searches all the nodes in the tree and chooses the best outcome)
+
++ Defined a function for clearing the terminal (Uses windows mathod then tries the universal 'clear' )
++ Created render function for the board
++ Creted AI resolution function that choses the next move upon unable to decide it choses a random free slot
++ Created a proof check with dictionary of valid moves for player choices. (Exception )
+
+*Created welcome program with properties for game
