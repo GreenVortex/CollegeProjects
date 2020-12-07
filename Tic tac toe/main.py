@@ -12,7 +12,7 @@ board = [
     [0, 0, 0],
 ]
 
-board = board[::-1] #Temporary fix for board positioning
+board = board[::-1]  # Temporary fix for board positioning
 
 
 def evaluate(state):
