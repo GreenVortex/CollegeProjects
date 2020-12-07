@@ -1,4 +1,6 @@
+************
 V1 Changelog
+************
 
 + Created Board
 + Heuristic value evaluate
@@ -15,4 +17,11 @@ V1 Changelog
 + Creted AI resolution function that choses the next move upon unable to decide it choses a random free slot
 + Created a proof check with dictionary of valid moves for player choices. (Exception )
 
-*Created welcome program with properties for game
+* Created welcome program with properties for game
+
+************
+V2 Changelog
+************
+
++ Created Temporary fix for board
+* Fixed indent errors
