@@ -3,6 +3,7 @@ from os import system
 from random import choice
 import platform
 import time
+import random
 
 HUMAN = -1
 COMP = +1
@@ -12,7 +13,13 @@ board = [
     [0, 0, 0],
 ]
 
-board = board[::-1]  # Temporary fix for board positioning
+# Temporary fix for board positioning
+board = board[::-1]
+
+# AFK mode
+afk_switch = False
+afk_move = [1,2,3,4,5,6,7,8,9]
+player_move = random.choice(afk_move)
 
 
 def evaluate(state):
@@ -176,7 +183,8 @@ def human_turn(c_choice, h_choice):
 
     while move < 1 or move > 9:
         try:
-            move = int(input('Make your move (1..9): '))
+
+            # move = int(input('Make your move (1..9): '))
             coord = moves[move]
             can_move = set_move(coord[0], coord[1], HUMAN)
 
@@ -255,4 +263,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-# Exactly 256 lines long if you know you know
