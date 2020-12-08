@@ -17,8 +17,8 @@ board = [
 board = board[::-1]
 
 # AFK mode
-afk_switch = False
-afk_move = [1,2,3,4,5,6,7,8,9]
+afk_switch = True
+afk_move = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 player_move = random.choice(afk_move)
 
 
@@ -183,8 +183,10 @@ def human_turn(c_choice, h_choice):
 
     while move < 1 or move > 9:
         try:
-
-            # move = int(input('Make your move (1..9): '))
+            if not afk_switch:
+                move = int(input('Make your move (1..9): '))
+            else:
+                move = player_move
             coord = moves[move]
             can_move = set_move(coord[0], coord[1], HUMAN)
 
