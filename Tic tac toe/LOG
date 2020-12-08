@@ -25,3 +25,16 @@ V2 Changelog
 
 + Created Temporary fix for board
 * Fixed indent errors
+
+************
+V3 Changelog
+************
+
++ Added AFK moves
+
+************
+V4 Changelog
+************
+
++ Added Switch for AFK mode
+- Deleted redundant code
