@@ -124,6 +124,14 @@ def clean():
         system('clear')
 
 
+"""
+Checks OS platform
+Converts it to lowercase string
+Compares if OS platform contains the keyword windows and uses windows CMD command
+If other OS uses linux conventional command 'clear'
+"""
+
+
 def render(state, c_choice, h_choice):
     # Generates the board
 
@@ -181,23 +189,24 @@ def human_turn(c_choice, h_choice):
     print(f'Human turn [{h_choice}]')
     render(board, c_choice, h_choice)
 
-    while move < 1 or move > 9:
+    while move < 1 or move > 9:  # if the move is within the range of 1-9 proceed
         try:
-            if not afk_switch:
-                move = int(input('Make your move (1..9): '))
+            if not afk_switch:  # Checks if AFK is enabled
+                move = int(input('Make your move (1..9): '))  # if AFK is disabled then get user input to play
             else:
-                move = player_move
+                move = player_move  # Use randomized input from the array of 1-9
             coord = moves[move]
             can_move = set_move(coord[0], coord[1], HUMAN)
 
-            if not can_move:
+            if not can_move:  # If can't move then print response
                 print('Bad move, try again')
                 move = -1
+
         except (EOFError, KeyboardInterrupt):
-            print('Bye, Play soon')
-            exit()
+            print('Bye, Play soon')  # response for terminating program unexpectedly
+            exit(code=1)
         except (KeyError, ValueError):
-            print('Bad choice')
+            print('Bad choice')  # exception for an invalid value
 
 
 def main():
@@ -214,7 +223,7 @@ def main():
             h_choice = input('Choose X or O\nChosen: ').upper()
         except (EOFError, KeyboardInterrupt):
             print('Bye')
-            exit()
+            exit(code=1)
         except (KeyError, ValueError):
             print('Bad choice')
 
@@ -231,7 +240,7 @@ def main():
             first = input('First to start?[y/n]: ').upper()
         except (EOFError, KeyboardInterrupt):
             print('Thanks for playing')
-            exit()
+            exit(code=1)
         except (KeyError, ValueError):
             print('Please select y or n ')
 
@@ -249,19 +258,25 @@ def main():
         clean()
         print(f'Human turn [{h_choice}]')
         render(board, c_choice, h_choice)
-        print('YOU WIN!')
+        print('YOU WIN!')  # winner msg
     elif wins(board, COMP):
         clean()
         print(f'Computer turn [{c_choice}]')
         render(board, c_choice, h_choice)
-        print('YOU LOSE!')
+        print('YOU LOSE!')  # Looser msg
     else:
         clean()
         render(board, c_choice, h_choice)
-        print('DRAW!')
+        print('DRAW!')  # Draw msg
 
-    exit()
+    exit(code=1)  # Terminates game on end
 
 
 if __name__ == '__main__':
     main()
+
+
+"""
+*TODO NOTES*
+*ADD continuity loop at end of game
+"""
