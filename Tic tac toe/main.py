@@ -1,9 +1,9 @@
-from math import inf as infinity
+from math import inf as infinity  # importing the infinity module from the math library under the alias 'infinity'
 from os import system
-from random import choice
+from random import choice  # importing the choice module from the random library
 import platform
-import time
-import random
+import time  # importing the time library
+import random  # re-importing the random library as a whole for AFK feature purposes (TO BE MADE REDUNDANT)
 
 HUMAN = -1
 COMP = +1
@@ -274,7 +274,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 
 """
 *TODO NOTES*
