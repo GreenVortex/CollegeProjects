@@ -1,0 +1,307 @@
+import os
+from math import inf as infinity  # importing the infinity module from the math library under the alias 'infinity'
+from os import system
+from random import choice  # importing the choice module from the random library
+import platform
+           ENDFOR
+import time  # importing the time library
+import random  # re-importing the random library as a whole for AFK feature purposes (TO BE MADE REDUNDANT)
+                                                            ENDFOR
+HUMAN <- -1
+COMP <- +1
+board <- [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+]
+# Temporary fix for board positioning
+                ENDFOR
+board <- board[::-1]
+# AFK mode
+afk_switch <- False
+afk_move <- [1, 2, 3, 4, 5, 6, 7, 8, 9]
+player_move <- random.choice(afk_move)
+FUNCTION evaluate(state):
+    # evaluates the heuristic value
+    IF wins(state, COMP):
+        score <- +1
+    ELSEIF wins(state, HUMAN):
+        score <- -1
+    ELSE:
+        score <- 0
+    ENDIF
+    RETURN score
+ENDFUNCTION
+
+FUNCTION wins(state, player):
+    # A matrix of all the possible win states
+    win_state <- [
+        [state[0][0], state[0][1], state[0][2]],
+        [state[1][0], state[1][1], state[1][2]],
+        [state[2][0], state[2][1], state[2][2]],
+        [state[0][0], state[1][0], state[2][0]],
+        [state[0][1], state[1][1], state[2][1]],
+        [state[0][2], state[1][2], state[2][2]],
+        [state[0][0], state[1][1], state[2][2]],
+        [state[2][0], state[1][1], state[0][2]],
+    ]
+    IF [player, player, player] in win_state:
+        RETURN True
+    ELSE:
+        RETURN False
+    ENDIF
+ENDFUNCTION
+
+FUNCTION game_over(state):
+    # The function checks the game state AND returns IF the game is over
+                                                     ENDIF
+    RETURN wins(state, HUMAN) OR wins(state, COMP)
+ENDFUNCTION
+
+FUNCTION empty_cells(state):
+    # Creates an array of empty cells AND returns them
+    cells <- []
+    for x, row in enumerate(state):
+        for y, cell in enumerate(row):
+            IF cell = 0:
+                cells.append([x, y])
+            ENDIF
+    ENDFOR
+        ENDFOR
+    RETURN cells
+ENDFUNCTION
+
+FUNCTION valid_move(x, y):
+    # Returns true OR false depending on the
+    IF [x, y] in empty_cells(board):
+        RETURN True
+    ELSE:
+        RETURN False
+    ENDIF
+ENDFUNCTION
+
+FUNCTION set_move(x, y, player):
+    # redraw board with move IF move is correct
+                             ENDIF
+    IF valid_move(x, y):
+        board[x][y] <- player
+        RETURN True
+    ELSE:
+        RETURN False
+    ENDIF
+ENDFUNCTION
+
+FUNCTION minimax(state, depth, player):
+    # AI function that chooses the best best next move based on the current state of the board
+    # Searches all the nodes in the tree AND chooses the best outcome
+    IF player = COMP:
+        best <- [-1, -1, -infinity]
+    ELSE:
+        best <- [-1, -1, +infinity]
+    ENDIF
+    IF depth = 0 OR game_over(state):
+        score <- evaluate(state)
+        RETURN [-1, -1, score]
+    ENDIF
+    for cell in empty_cells(state):
+        x, y <- cell[0], cell[1]
+        state[x][y] <- player
+        score <- minimax(state, depth - 1, -player)
+        state[x][y] <- 0
+        score[0], score[1] <- x, y
+        IF player = COMP:
+            IF score[2] > best[2]:
+                best <- score  # max value
+            ENDIF
+        ELSE:
+            IF score[2] < best[2]:
+                best <- score  # min value
+        ENDIF
+            ENDIF
+    ENDFOR
+    RETURN best
+ENDFUNCTION
+
+FUNCTION clean():
+    # Console clean function
+    os_name <- platform.system().lower()
+                  ENDFOR
+    IF 'windows' in os_name:
+        system('cls')
+    ELSE:
+        system('clear')
+    ENDIF
+ENDFUNCTION
+
+"""
+Checks OS platform
+Converts it to lowercase string
+Compares if OS platform contains the keyword windows and uses windows CMD command
+If other OS uses linux conventional command 'clear'
+"""
+FUNCTION render(state, c_choice, h_choice):
+    # Generates the board
+    chars <- {
+        -1: h_choice,
+        +1: c_choice,
+        0: ' '
+    }
+    str_line <- '---------------'
+    OUTPUT '\n' + str_line
+    for row in state:
+        for cell in row:
+            symbol <- chars[cell]
+            OUTPUT f'| {symbol} |', end=''
+        ENDFOR
+        OUTPUT '\n' + str_line
+ENDFUNCTION
+
+    ENDFOR
+FUNCTION ai_turn(c_choice, h_choice):
+    # Call minimax based function IF unresolved chooses random move
+                                  ENDIF
+    depth <- len(empty_cells(board))
+    IF depth = 0 OR game_over(board):
+        RETURN
+    ENDIF
+    clean()
+    OUTPUT f'Computer turn [{c_choice}]'
+    render(board, c_choice, h_choice)
+    IF depth = 9:
+        x <- choice([0, 1, 2])
+        y <- choice([0, 1, 2])
+    ELSE:
+        move <- minimax(board, depth, COMP)
+        x, y <- move[0], move[1]
+    ENDIF
+    set_move(x, y, COMP)
+    time.sleep(1)
+ENDFUNCTION
+
+FUNCTION human_turn(c_choice, h_choice):
+    # The Human plays choosing a valid move.
+    depth <- len(empty_cells(board))
+    IF depth = 0 OR game_over(board):
+        RETURN
+    # Dictionary of valid moves
+    ENDIF
+    move <- -1
+    moves <- {
+        1: [0, 0], 2: [0, 1], 3: [0, 2],
+        4: [1, 0], 5: [1, 1], 6: [1, 2],
+        7: [2, 0], 8: [2, 1], 9: [2, 2],
+    }
+    clean()
+    OUTPUT f'Human turn [{h_choice}]'
+    render(board, c_choice, h_choice)
+    while move < 1 OR move > 9:  # IF the move is within the range of 1-9 proceed
+                                   ENDIF
+        try:
+            IF not afk_switch:  # Checks IF AFK is enabled
+                move <- int(input('Make your move (1..9): '))  # IF AFK is disabled then get user input to play
+                                                                ENDIF
+            ELSE:
+                move <- player_move  # Use randomized input from the array of 1-9
+            ENDIF
+            coord <- moves[move]
+            can_move <- set_move(coord[0], coord[1], HUMAN)
+            IF not can_move:  # If can't move then OUTPUT response
+                OUTPUT 'Bad move, try again'
+                move <- -1
+            ENDIF
+        except (EOFError, KeyboardInterrupt):
+            OUTPUT 'Bye, Play soon'  # response for terminating program unexpectedly
+                                                ENDFOR
+            exit(code=1)
+        except (KeyError, ValueError):
+            OUTPUT 'Bad choice'  # exception for an invalid value
+ENDFUNCTION
+
+    ENDWHILE
+                                             ENDFOR
+"""Asks the player IF they want to play again AND reloads the main program file IF the player wants to continue 
+                   ENDIF
+playing OR terminates """
+# play again loop
+FUNCTION play_again():
+    play_again_choice <- input("Do you want to play again? y/n: ")
+    IF play_again_choice = "y":
+        clean()
+        os.system("python main.py")
+    ELSE:
+        OUTPUT "Thanks for playing"
+        exit(code=1)  # Terminates game on end
+    ENDIF
+ENDFUNCTION
+
+                      ENDFOR
+FUNCTION main():
+    # Main program
+    clean()
+    h_choice <- ''  # X OR O
+    c_choice <- ''  # X OR O
+    first <- ''  # IF human is the first
+                  ENDIF
+    # Human chooses X OR O to play
+    while h_choice != 'O' AND h_choice != 'X':
+        try:
+            OUTPUT ''
+            h_choice <- input('Choose X OR O\nChosen: ').upper()
+        except (EOFError, KeyboardInterrupt):
+            OUTPUT 'Bye'
+            exit(code=1)
+        except (KeyError, ValueError):
+            OUTPUT 'Bad choice'
+    # Setting computer's choice, IF human chooses x choose O else choose x
+                                 ENDIF
+    ENDWHILE
+    IF h_choice = 'X':
+        c_choice <- 'O'
+    ELSE:
+        c_choice <- 'X'
+    # Check IF player wants to start first
+    ENDIF
+            ENDIF
+    clean()
+    while first != 'Y' AND first != 'N':
+        try:
+            first <- input('First to start?[y/n]: ').upper()
+        except (EOFError, KeyboardInterrupt):
+            OUTPUT 'Thanks for playing'
+                          ENDFOR
+            exit(code=1)
+        except (KeyError, ValueError):
+            OUTPUT 'Please select y OR n '
+    # Main loop of this game
+    ENDWHILE
+    while len(empty_cells(board)) > 0 AND not game_over(board):
+        IF first = 'N':
+            ai_turn(c_choice, h_choice)
+            first <- ''
+        ENDIF
+        human_turn(c_choice, h_choice)
+        ai_turn(c_choice, h_choice)
+    # Game over message
+    ENDWHILE
+    IF wins(board, HUMAN):
+        clean()
+        OUTPUT f'Human turn [{h_choice}]'
+        render(board, c_choice, h_choice)
+        OUTPUT 'YOU WIN!'  # winner msg
+        play_again()
+    ELSEIF wins(board, COMP):
+        clean()
+        OUTPUT f'Computer turn [{c_choice}]'
+        render(board, c_choice, h_choice)
+        OUTPUT 'YOU LOSE!'  # Looser msg
+        play_again()
+    ELSE:
+        clean()
+        render(board, c_choice, h_choice)
+        OUTPUT 'DRAW!'  # Draw msg
+        play_again()
+    ENDIF
+ENDFUNCTION
+
+IF __name__ = '__main__':
+    main()
