@@ -1,3 +1,4 @@
+import os
 from math import inf as infinity  # importing the infinity module from the math library under the alias 'infinity'
 from os import system
 from random import choice  # importing the choice module from the random library
@@ -17,7 +18,7 @@ board = [
 board = board[::-1]
 
 # AFK mode
-afk_switch = True
+afk_switch = False
 afk_move = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 player_move = random.choice(afk_move)
 
@@ -209,6 +210,21 @@ def human_turn(c_choice, h_choice):
             print('Bad choice')  # exception for an invalid value
 
 
+"""Asks the player if they want to play again and reloads the main program file if the player wants to continue 
+playing or terminates """
+
+
+# play again loop
+def play_again():
+    play_again_choice = input("Do you want to play again? y/n: ")
+    if play_again_choice == "y":
+        clean()
+        os.system("python main.py")
+    else:
+        print("Thanks for playing")
+        exit(code=1)  # Terminates game on end
+
+
 def main():
     # Main program
     clean()
@@ -259,23 +275,19 @@ def main():
         print(f'Human turn [{h_choice}]')
         render(board, c_choice, h_choice)
         print('YOU WIN!')  # winner msg
+        play_again()
     elif wins(board, COMP):
         clean()
         print(f'Computer turn [{c_choice}]')
         render(board, c_choice, h_choice)
         print('YOU LOSE!')  # Looser msg
+        play_again()
     else:
         clean()
         render(board, c_choice, h_choice)
         print('DRAW!')  # Draw msg
-
-    exit(code=1)  # Terminates game on end
+        play_again()
 
 
 if __name__ == '__main__':
     main()
-
-"""
-*TODO NOTES*
-*ADD continuity loop at end of game
-"""
