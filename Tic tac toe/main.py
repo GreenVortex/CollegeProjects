@@ -14,13 +14,16 @@ board = [
     [0, 0, 0],
 ]
 
-# Temporary fix for board positioning
-board = board[::-1]
-
 # AFK mode
-afk_switch = False
+afk_switch = False  # Set to True for afk mode
 afk_move = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 player_move = random.choice(afk_move)
+
+"""
+//AFK MODE//
+A randomized array that selects random 
+key value and uses it as a move on the board 
+"""
 
 
 def evaluate(state):
@@ -126,10 +129,12 @@ def clean():
 
 
 """
+//Clean Function//
 Checks OS platform
 Converts it to lowercase string
 Compares if OS platform contains the keyword windows and uses windows CMD command
 If other OS uses linux conventional command 'clear'
+Clears console
 """
 
 
@@ -210,7 +215,9 @@ def human_turn(c_choice, h_choice):
             print('Bad choice')  # exception for an invalid value
 
 
-"""Asks the player if they want to play again and reloads the main program file if the player wants to continue 
+"""
+//Play again function//
+Asks the player if they want to play again and reloads the main program file if the player wants to continue 
 playing or terminates """
 
 

@@ -64,3 +64,11 @@ V8 Changelog
 ************
 
 + Added pseudocode version
+
+************
+V9 Changelog
+************
+
+- Removed redundant code
++ Documented afk function
+* Adjusted documentation
