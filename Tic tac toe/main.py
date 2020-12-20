@@ -27,7 +27,7 @@ key value and uses it as a move on the board
 
 
 def evaluate(state):
-    # evaluates the heuristic value
+    # evaluates the heuristic value of current branch
     if wins(state, COMP):
         score = +1
     elif wins(state, HUMAN):

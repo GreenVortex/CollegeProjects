@@ -72,3 +72,9 @@ V9 Changelog
 - Removed redundant code
 + Documented afk function
 * Adjusted documentation
+
+************
+V10 Changelog
+************
+
++ Created an environment for python 3 in the PyCharm IDE, with predetermined parameters.
