@@ -38,6 +38,22 @@ def evaluate(state):
     return score
 
 
+# Board layout tutorial
+def print_tutorial():
+    print("""
+TUTORIAL: Please Use this format to play
+---------------
+| 1 || 2 || 3 |
+---------------
+| 4 || 5 || 6 |
+---------------
+| 7 || 8 || 9 |
+---------------
+          """)
+    input("Press Enter to continue")
+    print("\n")
+
+
 def wins(state, player):
     # A matrix of all the possible win states
     win_state = [
@@ -266,6 +282,9 @@ def main():
             exit(code=1)
         except (KeyError, ValueError):
             print('Please select y or n ')
+
+    # Show tutorial
+    print_tutorial()
 
     # Main loop of this game
     while len(empty_cells(board)) > 0 and not game_over(board):

@@ -78,3 +78,10 @@ V10 Changelog
 ************
 
 + Created an environment for python 3 in the PyCharm IDE, with predetermined parameters.
+
+************
+V11 Changelog
+************
+
++ Added board layout tutorial
++ Extra comments for documentation
