@@ -59,3 +59,4 @@ C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01
 C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.GenerateResource.cache
 C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.exe
 C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.pdb
+C:\Users\Jan\Documents\GitHub\CollegeProjects\Roulette Game (Extra)\Assaigmnet01\obj\Debug\Assaigmnet01.csproj.CoreCompileInputs.cache
